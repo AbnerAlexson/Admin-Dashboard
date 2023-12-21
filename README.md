@@ -9,8 +9,10 @@ Project will have a simillar look to this (example provided by The Odin project)
 This is the second project in TOP's Full Stack Javascript course. This project is built to showcase my knowledge of CSS's grid. This project also aimed to be responsive.
 
 ## Created with
-HTML
-CSS
-JAVASCRIPT
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JAVACRIPT</li>
+</ul>
 
 
