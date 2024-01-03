@@ -1,2 +1,15 @@
-
+*{
+    font-family: 'Inter', sans-serif;
+    --navbar-color: #38bdf8;
+    --navbar-font-color: #fff;
+    --userMenu-color: #fff;
+    --searchbar-color: #bfdbfe;
+    --content-bg-color: #cbd5e1;
+    --dashboard-width: clamp(200px, 22vw , 400px);
+    --userprofile-img: url('https://github.com/AbnerAlexson.png');
+    --otherprofile-img: url('SVGs/account-logos/user-account.svg');
+    --otherprofile-img2: url('SVGs/account-logos/other-account.svg');
+    --transition-dashboard: width 0.4s ease-in;
+    --transition-content-usermenu: margin-left 0.4s ease-in;
+}
 
