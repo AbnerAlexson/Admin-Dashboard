@@ -13,3 +13,126 @@
     --transition-content-usermenu: margin-left 0.4s ease-in;
 }
 
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+    "dashboar usermenu usermenu usermenu"
+    "dashboar conten conten conten" ;
+    grid-template-columns: 5rem 1fr 1fr;
+    grid-template-rows: 0.4fr 4fr;
+}
+
+    /* Navigation bar styling */
+
+.navbar {
+    grid-area: dashboar;
+    width: 5rem;
+    transition: var(--transition-dashboard);
+    background-color: var(--navbar-color);
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.navbar > div > img {
+    filter: invert(100%) sepia(100%) saturate(18%) hue-rotate(332deg) brightness(105%) contrast(106%);
+}
+
+.dashboard {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar h1 {
+    display: none;
+}
+
+.dashboard  img {
+    width: calc(70px + 0.7rem);
+    height: calc(70px + 0.7rem);
+}
+
+.dashboard h1 {
+    color: var(--navbar-font-color);
+    font-size: 1.5rem;
+    padding-left: 1.2rem;
+}
+
+.navbarItem {
+    width: 100%;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.navbar :nth-child(8) {
+    margin-top: 60px;
+}
+
+.navbarItem h1 {
+    color: var(--navbar-font-color);
+    font-size: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.navbarItem  img {
+    width: calc(40px + 0.5rem);
+    height: calc(40px + 0.5rem);
+}
+
+.navbar:hover {
+    width: var(--dashboard-width);
+}
+
+.navbar:hover h1 {
+    display: block;
+}
+
+.navbar:hover ~ .userMenu,
+.navbar:hover ~ .contents {
+    margin-left: calc(var(--dashboard-width) - 5rem);
+}
+
+.navbar > * {
+    cursor: pointer;
+}
+
+    /* UserMenu styling */
+
+.userMenu {
+    border: 1px solid black;
+    grid-area: usermenu;
+    transition: var(--transition-content-usermenu);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+
+
+    /* contents styling */
+
+.contents {
+    border: 1px solid black;
+    grid-area: conten;
+    transition: var(--transition-content-usermenu);
+}
+
+
+
+
+
