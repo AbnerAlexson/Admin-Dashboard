@@ -12,7 +12,6 @@ This is the second project in TOP's Full Stack Javascript course. This project i
 <ul>
   <li>HTML</li>
   <li>CSS</li>
-  <li>JAVACRIPT</li>
 </ul>
 
 
