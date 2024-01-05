@@ -1,14 +1,18 @@
 *{
-    font-family: 'Inter', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box;
     --navbar-color: #38bdf8;
     --navbar-font-color: #fff;
     --userMenu-color: #fff;
-    --searchbar-color: #bfdbfe;
+    --searchbar-color: #d1d5db;
+    --searchbar-outlineColor: #9ca3af;
     --content-bg-color: #cbd5e1;
     --dashboard-width: clamp(200px, 22vw , 400px);
-    --userprofile-img: url('https://github.com/AbnerAlexson.png');
-    --otherprofile-img: url('SVGs/account-logos/user-account.svg');
-    --otherprofile-img2: url('SVGs/account-logos/other-account.svg');
+    --userprofile-img: url('imgs/User.png');
+    --juanprofile-img: url('imgs/Juan.jpg');
+    --kyleprofile-img: url('imgs/kyle.jpg');
+    --abnerprofile-img: url('imgs/Abner.jpg');
+    --marthaprofile-img: url('imgs/martha.jpg');
     --transition-dashboard: width 0.4s ease-in;
     --transition-content-usermenu: margin-left 0.4s ease-in;
 }
@@ -114,13 +118,80 @@ body {
 .userMenu {
     border: 1px solid black;
     grid-area: usermenu;
+    padding-left: 30px;
     transition: var(--transition-content-usermenu);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 20vh;
+    position: sticky;
 }
+
+    /* User Menu top styling */
+
+.topUserMenu{
+    border: 1px solid black;
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.searchBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.searchBar input {
+    border: 0;
+    margin-left: 1.2rem;
+    width: 40vw;
+    height: 30px;
+    background-color: var(--searchbar-color);
+    border-radius: 15px;
+}
+
+.searchBar input:focus {
+    outline: 1px solid var(--searchbar-outlineColor);
+}
+
+.searchBar > div > img {
+    width: 40px;
+    height: 30px;
+}
+
+.userAccount {
+    border: 1px solid black;
+    width: 20vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.userAccount > div > img {
+    width: 40px;
+    height: 30px;
+}
+
+.userProfileImg {
+    background: var(--userprofile-img) no-repeat center center / cover;
+    height: 100%;
+    width: 20%;
+}
+
+/* User Menu bottom styling */
+
+.bottomUserMenu {
+    border: 1px solid black;
+    width: 100%;
+    height: 70%;
+}
+
 
 
 
@@ -130,6 +201,7 @@ body {
     border: 1px solid black;
     grid-area: conten;
     transition: var(--transition-content-usermenu);
+    overflow: hidden;
 }
 
 
