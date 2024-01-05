@@ -1,4 +1,4 @@
-*{
+:root {
     font-family: 'Nanum Gothic', sans-serif;
     box-sizing: border-box;
     --navbar-color: #38bdf8;
@@ -8,8 +8,8 @@
     --searchbar-outlineColor: #9ca3af;
     --content-bg-color: #cbd5e1;
     --dashboard-width: clamp(200px, 22vw , 400px);
-    --userprofile-img: url('imgs/User.png');
-    --juanprofile-img: url('imgs/Juan.jpg');
+    --userprofile-img: url('/imgs/User.png');
+    --juanprofile-img: url('/imgs/Juan.jpg');
     --kyleprofile-img: url('imgs/kyle.jpg');
     --abnerprofile-img: url('imgs/Abner.jpg');
     --marthaprofile-img: url('imgs/martha.jpg');
@@ -167,6 +167,7 @@ body {
 
 .userAccount {
     border: 1px solid black;
+    height: 100%;
     width: 20vw;
     display: flex;
     flex-direction: row;
@@ -187,7 +188,7 @@ body {
 /* User Menu bottom styling */
 
 .bottomUserMenu {
-    border: 1px solid black;
+    border: 1px solid rgb(0, 0, 0);
     width: 100%;
     height: 70%;
 }
